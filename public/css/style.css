@@ -1,0 +1,32 @@
+body {
+    height: 2000px;
+}
+
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .2s ease-in-out;
+    padding-bottom: 1.2px;
+}
+
+.link-underline-active {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 100% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 1.2px;
+}
+
+.link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#99A1A2, #99A1A2)
+}
+
+.link-underline:hover {
+    background-size: 100% 1px;
+    background-position: 0 100%;
+    padding-bottom: 1.2px;
+}
