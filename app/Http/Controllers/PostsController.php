@@ -14,6 +14,7 @@ class PostsController extends Controller
     {
         return view('index.posts', [
             'title' => 'posts',
+            'posts' => Posts::all(),
         ]);
     }
 
@@ -38,7 +39,7 @@ class PostsController extends Controller
      */
     public function show(Posts $posts)
     {
-        //
+
     }
 
     /**
